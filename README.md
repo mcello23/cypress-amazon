@@ -106,7 +106,7 @@ cy.get('h1').contains('Cesta')
 Please check the video recorded in the `/video/` folder, which conatins a high-res video of the suite running and making it's assertions.
 
 ## Last comments
-Please, any doubts just contact me at `marcelodsc@gmail.com` or if you want me to explain and show the suite running directly in my PC, I'll gladly do it in a video call.
+Please, any doubts just contact me at `marceloadsc@gmail.com` or if you want me to explain and show the suite running directly in my PC, I'll gladly do it in a video call.
 
 # Thank you!
 ![Boom!](/img/drop_the_mic.gif) 
