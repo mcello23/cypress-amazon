@@ -48,9 +48,9 @@ Then, you'll have three options of browsers in which you'll be running the tests
 
 ## You're one click away
 
-![This is the first window you'll see](/img/cypress_first_window_1.jpg)
-
 Here is the first window you'll see. In it, just click on the spec `testing_amazon.cy.js` and it all the start running.
+
+![This is the first window you'll see](/img/cypress_first_window_1.jpg)
 
 Here's a video example of how the suite runs:
 
@@ -101,3 +101,12 @@ cy.get('#sw-gtc > .a-button-inner > .a-button-text').click()
 //Assertion
 cy.get('h1').contains('Cesta')
 > And this is the most important, being the assertion in which validates the behaviour so far. I make Cypress check the `h1` element, which conatins `Cart` written and then the test passes.
+
+# Video
+Please check the video recorded in the `/video/` folder, which conatins a high-res video of the suite running and making it's assertions.
+
+## Last comments
+Please, any doubts just contact me at `marcelodsc@gmail.com` or if you want me to explain and show the suite running directly in my PC, I'll gladly do it in a video call.
+
+# Thank you!
+![Boom!](/img/drop_the_mic.gif) 
