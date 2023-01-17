@@ -98,7 +98,6 @@ cy.get('#add-to-cart-button-ubb').click()
 cy.get('#sw-gtc > .a-button-inner > .a-button-text').click()
 > Then, I go to `View on Cart`.
 
-//Assertion
 cy.get('h1').contains('Cesta')
 > And this is the most important, being the assertion in which validates the behaviour so far. I make Cypress check the `h1` element, which conatins `Cart` written and then the test passes.
 
