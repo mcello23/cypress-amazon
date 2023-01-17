@@ -46,15 +46,15 @@ Run Cypress with the following command: `npx cypress open`.
 In the GUI mode, Cypress will ask you which type of testing you'll be running, select `E2E Testing`.
 Then, you'll have three options of browsers in which you'll be running the tests. `Chrome` is the one recommended.
 
-## You`re one click away
+## You're one click away
 
-![This is the first window you`ll see](/img/cypress_first_window_1.jpg)
+![This is the first window you'll see](/img/cypress_first_window_1.jpg)
 
-Here is the first window you`ll see. In it, just click on the spec `testing_amazon.cy.js` and it all the start running.
+Here is the first window you'll see. In it, just click on the spec `testing_amazon.cy.js` and it all the start running.
 
-Here`s a video example of how the suite runs:
+Here's a video example of how the suite runs:
 
-![Here`s the automation tests running](/img/cypress_run.gif) 
+![Here's the automation tests running](/img/cypress_run.gif) 
 
 ## Explaining the test suite
 
