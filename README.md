@@ -103,7 +103,7 @@ cy.get('h1').contains('Cesta')
 > And this is the most important, being the assertion in which validates the behaviour so far. I make Cypress check the `h1` element, which conatins `Cart` written and then the test passes.
 
 # Video
-Please check the video recorded in the [video](https://github.com/mcello23/cypress-amazon/blob/master/cypress/videos/testing_amazon.cy.js.mp4) folder, which conatins a high-res video of the suite running and making it's assertions.
+Please check the video recorded in the [video](https://github.com/mcello23/cypress-amazon/blob/master/cypress/videos/) folder, which conatins a high-res video of the suite running and making it's assertions.
 
 ## Last comments
 Please, any doubts just contact me at `marceloadsc@gmail.com` or if you want me to explain and show the suite running directly in my PC, I'll gladly do it in a video call.
