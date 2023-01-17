@@ -1,0 +1,27 @@
+{
+  "name": "cypress_amazon_testing",
+  "version": "1.0.0",
+  "description": "Repo of the Amazon web testing created for Worldline technical evaluation",
+  "main": "'https://www.amazon.es/'",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:opn:mobile": "cypress open --config viewportWidth=400 viewportHeight=772"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcello23/cypress-amazon"
+  },
+  "keywords": [
+    "Cypress",
+    "Cypress.io",
+    "Amazon",
+    "Technical Evaluation"
+  ],
+  "author": "Marcelo Costa <marceloadsc@gmail.com> (https://mcello23.github.io/webpage/)",
+  "license": "MIT",
+  "homepage": "https://github.com/mcello23/cypress-amazon#readme",
+  "devDependencies": {
+    "cypress": "^12.3.0"
+  }
+}
