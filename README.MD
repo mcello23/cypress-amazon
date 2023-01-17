@@ -55,17 +55,17 @@ Here is the first window you'll see. In it, just click on the spec 'testing_amaz
 
 Here's a video example of how the suite runs:
 
-![This is the first window you'll see](https://makeagif.com/i/8Q7pOZ) 
+![Here's the automation tests running](/img/cypress_run.gif) 
 
 ## Explaining the test suite
 
 The suite is composed of two test cases in which, before each test is run, it executes the command: 
-_ _beforeEach(function()_ _
+**beforeEach(function()**
 
 This makes that the following commands are run before each test case, such as:
 
 cy.visit('https://www.amazon.es/') 
-> It will visit the Amazon Spain webpage
+> It will always visit the Amazon Spain webpage before a test case
     
 cy.get('#sp-cc-rejectall-container').click() 
 > This one clicks on the 'continue without accepting cookies' for better visualiztion of the tests.
@@ -78,7 +78,6 @@ cy.visit('https://www.amazon.es/')
 
 cy.title().should('be.equal', 'Amazon.es: compra online de electrónica, libros, deporte, hogar, moda y mucho más.')
 > And then, I validate that Amazon.es is the correct website we're located, which it works through the .should('be.equal') function
-
 
 **Second test case - Searches for a Nespresso product and adds it to the cart**:
 
