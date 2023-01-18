@@ -18,9 +18,6 @@ You`ll need to have and install:
 
 To use Terminal inside VS Code, simply press `CTRL + '` (it's usually the key before 1) in your keyboard.
 Run `npm install`  (or `npm i` for the short version) to install the dev dependencies.
-## Desktop
-
-Run `npm run cy:open` to open Cypress in interactive mode on a desktop viewport.
 
 # Requirements of the test case
 
@@ -42,7 +39,8 @@ Install Cypress with `npm install cypress --save-dev` from your terminal.
 
 ## Running Cypress
 
-Run Cypress with the following command: `npx cypress open`.
+Run Cypress with the following command: `npx cypress open` or through a script that I screated `npm run cy:open` to open Cypress in interactive mode on a desktop viewport.
+
 In the GUI mode, Cypress will ask you which type of testing you'll be running, select `E2E Testing`.
 
 ![This is the first window you'll see](/img/cypress_e2e.jpg)
