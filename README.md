@@ -44,17 +44,23 @@ Install Cypress with `npm install cypress --save-dev` from your terminal.
 
 Run Cypress with the following command: `npx cypress open`.
 In the GUI mode, Cypress will ask you which type of testing you'll be running, select `E2E Testing`.
+
+![This is the first window you'll see](/img/cypress_e2e.jpg)
+
 Then, you'll have three options of browsers in which you'll be running the tests. `Chrome` is the one recommended.
 
 ## You're one click away
 
 Here is the first window you'll see. In it, just click on the spec `testing_amazon.cy.js` and it all the start running.
 
-![This is the first window you'll see](/img/cypress_first_window_1.jpg)
+![Click on the highlighted spec](/img/cypress_first_window_1.jpg)
 
-Here's a video example of how the suite runs:
+Here's an example of how the suite runs:
 
 ![Here's the automation tests running](/img/cypress_run.gif) 
+
+# Video
+Please check the video recorded in the [video](https://github.com/mcello23/cypress-amazon/blob/master/cypress/videos/) folder, which conatins a high-res video of the suite running and making it's assertions.
 
 ## Explaining the test suite
 
@@ -101,8 +107,6 @@ cy.get('#sw-gtc > .a-button-inner > .a-button-text').click()
 cy.get('h1').contains('Cesta')
 > And this is the most important, being the assertion in which validates the behaviour so far. I make Cypress check the `h1` element, which conatins `Cart` written and then the test passes.
 
-# Video
-Please check the video recorded in the [video](https://github.com/mcello23/cypress-amazon/blob/master/cypress/videos/) folder, which conatins a high-res video of the suite running and making it's assertions.
 
 ## Last comments
 Please, any doubts just contact me at `marceloadsc@gmail.com` or if you want me to explain and show the suite running directly in my PC, I'll gladly do it in a video call.
