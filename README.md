@@ -69,7 +69,7 @@ Here's an example of how the suite runs:
 ![Here's the automation tests running](/img/cypress_run.gif) 
 
 # Video
-Please check the a high-res video recorded in the [video](https://github.com/mcello23/cypress-amazon/blob/master/cypress/videos/) folder, in which you can see the suite running and making it's assertions.
+Please check a high-res video recorded in the [video](https://github.com/mcello23/cypress-amazon/blob/master/cypress/videos/) folder, in which you can see the suite running and making it's assertions.
 
 # Explaining the test suite
 
