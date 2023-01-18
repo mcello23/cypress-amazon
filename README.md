@@ -1,4 +1,4 @@
-# License
+## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/mcello23/cypress-amazon/blob/master/LICENSE.md) file for details.
 
 # Welcome!
