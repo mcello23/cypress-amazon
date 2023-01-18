@@ -75,7 +75,7 @@ Please check a high-res video recorded in the [video](https://github.com/mcello2
 
 ## Using beforeEach() function
 
-The suite is composed of two test cases in which, before each test is run, it executes the command: 
+The suite is composed of three test cases in which, before each test is run, it executes the command: 
 **beforeEach(function()**
 
 This makes that the following commands are run before each test case, such as:
