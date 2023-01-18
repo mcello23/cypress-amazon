@@ -1,3 +1,6 @@
+## License
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/mcello23/cypress-amazon/blob/master/LICENSE.md) file for details.
+
 # Welcome!
 
 Thank you for checking out this ~~small~~ yet effective automation test using Cypress. 
@@ -6,18 +9,13 @@ The test was made in **JavaScript**.
 
 # Pre-Requirements
 
-You`ll need to have and install:
+You'll need to have and install:
 
 - [Node.js](https://nodejs.org/en/) 
 - [Google Chrome](https://www.google.com/chrome/)
 - [Visual Studio Code](https://code.visualstudio.com/) or any other IDE of your preference. 
 
 > **Obs.:** At installing Node.js, npm is installed toghether.
-
-## NPM Installation
-
-To use Terminal inside VS Code, simply press `CTRL + '` (it's usually the key before 1) in your keyboard.
-Run `npm install`  (or `npm i` for the short version) to install the dev dependencies.
 
 # Requirements of the test case
 
@@ -33,13 +31,26 @@ Download this repo and open it in `Visual Studio Code` as the IDE that I recomme
 
 After Opening VS Code, go to `File > Open Folder` and select the folder where everything is extracted.
 
+![vscode opened](/img/vscode_opened.jpg)
+
+## NPM Installation
+
+To use Terminal inside VS Code, simply press `CTRL + '` (it's usually the key before 1) in your keyboard.
+Run `npm install`  (or `npm i` for the short version) to install the dev dependencies.
+
+![NPM installation](/img/vscode_npm_install.jpg)
+
 ## Installing Cypress
 
 Install Cypress with `npm install cypress --save-dev` from your terminal.
 
+![cypress install](/img/vscode_cypress_install.jpg)
+
 ## Running Cypress
 
 Run Cypress with the following command: `npx cypress open` or through a script that I created `npm run cy:open` to open Cypress in interactive mode on a desktop viewport.
+
+![cypress run](/img/vscode_running_cypress.jpg)
 
 In the GUI mode, Cypress will ask you which type of testing you'll be running, select `E2E Testing`.
 
@@ -129,6 +140,10 @@ cy.get('#sw-gtc > .a-button-inner > .a-button-text').click()
   
 cy.get('.a-color-base > .a-truncate > .a-truncate-cut').contains('NESPRESSO SNE900')
 > Here the assertion is slightly different than in the last test case, it looks `NESPRESSO SNE900` is in the child element inside the cart. It finds it and it passes the test.
+
+## A screenshot of all the tests executed and passed
+
+![Suite working](/img/suite_passed.jpg) 
 
 # Check out the code!
 Please check the [code](https://github.com/mcello23/cypress-amazon/blob/master/cypress/e2e/testing_amazon.cy.js) itself in my repo to see it better structured and all.
