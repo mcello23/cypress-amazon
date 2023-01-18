@@ -1,3 +1,6 @@
+# License
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/mcello23/cypress-amazon/blob/master/LICENSE.md) file for details.
+
 # Welcome!
 
 Thank you for checking out this ~~small~~ yet effective automation test using Cypress. 
@@ -6,7 +9,7 @@ The test was made in **JavaScript**.
 
 # Pre-Requirements
 
-You`ll need to have and install:
+You'll need to have and install:
 
 - [Node.js](https://nodejs.org/en/) 
 - [Google Chrome](https://www.google.com/chrome/)
