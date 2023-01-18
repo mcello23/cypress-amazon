@@ -6,7 +6,6 @@ describe('Amazon', function() {
     cy.get('#sp-cc-rejectall-container').click()
   })
   it('Verifies the title of the Webpage', function() {
-    cy.visit('https://www.amazon.es/')
     cy.title().should('be.equal', 'Amazon.es: compra online de electrónica, libros, deporte, hogar, moda y mucho más.') //Assertion of the Amazon webpage by it's title, not the h1, the <head></head>
 })
   it('Searches for a Nespresso product and adds it to the cart', function() {
