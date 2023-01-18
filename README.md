@@ -106,6 +106,9 @@ cy.get('h1').contains('Cesta')
 
 ## Third test case - Searches for a sepecific Nespresso SNE900 product and adds it to the cart:
 
+it('Searches for a specific Nespresso SNE900 product, adds it to the cart and validates it', function() {
+> It enters Amazon.es with the beforeEach() function
+
 cy.get('#twotabsearchtextbox').type('NESPRESSO SNE900')
 > Here, it finds the search bar and clicks on it and writes `NESPRESSO SNE900`.
 
