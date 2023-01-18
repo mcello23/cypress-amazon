@@ -2,17 +2,17 @@ describe('Amazon', function() {
    beforeEach(function() {
     //Visits the Amazon Spain webpage:
     cy.visit('https://www.amazon.es/')
-    //Clicks on the continue without accepting cookies for better visualiztion of the exercise:
+    //Clicks on the continue without accepting cookies for better visualization of the exercise:
     cy.get('#sp-cc-rejectall-container').click()
   })
   it('Verifies the title of the Webpage', function() {
-    cy.title().should('be.equal', 'Amazon.es: compra online de electrónica, libros, deporte, hogar, moda y mucho más.') //Assertion of the Amazon webpage by it's title, not the h1, the <head></head>
+    cy.title().should('be.equal', 'Amazon.es: compra online de electrónica, libros, deporte, hogar, moda y mucho más.') //Assertion of the Amazon webpage by its title, not the h1, the <head></head>
 })
   it('Searches for a Nespresso product and adds it to the cart', function() {
 
     cy.get('#twotabsearchtextbox').type('Cafetera Nespresso') //Here, it finds the search bar and clicks on it and writes 'Cafetera Nespresso'
     cy.get('#nav-search-submit-button').click() //It looks for the search icon and clicks on it
-    cy.get('[data-asin="B00G5YOVZA"] > .sg-col-inner > .s-widget-container > .s-card-container > .a-spacing-base > .s-product-image-container > .rush-component > .a-link-normal > .a-section > .s-image').scrollIntoView().click() //Here I'm telling Cypress to look for a specific coffee manchine by it's ID, and it scrolls down until it finds and then clicks on it
+    cy.get('[data-asin="B00G5YOVZA"] > .sg-col-inner > .s-widget-container > .s-card-container > .a-spacing-base > .s-product-image-container > .rush-component > .a-link-normal > .a-section > .s-image').scrollIntoView().click() //Here I'm telling Cypress to look for a specific coffee machine by its ID, and it scrolls down until it finds and then clicks on it
     cy.get('#add-to-cart-button-ubb').click() //It looks for the 'Add to cart' button and clicks on it
     cy.get('#sw-gtc > .a-button-inner > .a-button-text').click() //It looks for the 'View this in cart' button and clicks on it
     //Assertion
