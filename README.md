@@ -14,13 +14,6 @@ You`ll need to have and install:
 
 > **Obs.:** At installing Node.js, npm is installed toghether.
 
-## NPM Installation
-
-To use Terminal inside VS Code, simply press `CTRL + '` (it's usually the key before 1) in your keyboard.
-Run `npm install`  (or `npm i` for the short version) to install the dev dependencies.
-
-![NPM installation](/img/vscode_npm_install.jpg)
-
 # Requirements of the test case
 
 Scenario: 
@@ -36,6 +29,13 @@ Download this repo and open it in `Visual Studio Code` as the IDE that I recomme
 After Opening VS Code, go to `File > Open Folder` and select the folder where everything is extracted.
 
 ![vscode opened](/img/vscode_opened.jpg)
+
+## NPM Installation
+
+To use Terminal inside VS Code, simply press `CTRL + '` (it's usually the key before 1) in your keyboard.
+Run `npm install`  (or `npm i` for the short version) to install the dev dependencies.
+
+![NPM installation](/img/vscode_npm_install.jpg)
 
 ## Installing Cypress
 
