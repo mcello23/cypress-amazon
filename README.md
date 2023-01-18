@@ -107,7 +107,7 @@ cy.get('h1').contains('Cesta')
 ## Third test case - Searches for a sepecific Nespresso SNE900 product and adds it to the cart:
 
 cy.get('#twotabsearchtextbox').type('NESPRESSO SNE900')
-> Here, it finds the search bar and clicks on it and writes 'NESPRESSO SNE900'
+> Here, it finds the search bar and clicks on it and writes `NESPRESSO SNE900`.
 
 cy.get('#nav-search-submit-button').click() 
 > It looks for the search icon and clicks on it
@@ -116,16 +116,16 @@ cy.get('[data-asin="B08LDSF6XP"] > .sg-col-inner > .s-widget-container > .s-card
 > Since there's 23 results, I tell cypress to click on the model of the coffee machine by the ID that I've passed on
 
 cy.get('#add-to-cart-button').click()
-> It looks for the 'Add to cart' button and clicks on it
+> It looks for the `Add to cart` button and clicks on it
 
 cy.get('#attachSiNoCoverage').click()
-> It looks for the 'No, thank you' in the Extra Warranty slider and clicks on it
+> It looks for the `No, thank you` in the Extra Warranty slider and clicks on it
 
 cy.get('#sw-gtc > .a-button-inner > .a-button-text').click()
-> It looks for the 'View this in cart' button and clicks on it
+> It looks for the `View this in cart` button and clicks on it
   
 cy.get('.a-color-base > .a-truncate > .a-truncate-cut').contains('NESPRESSO SNE900')
-> Here the assertion is slightly different than in the last test case, it looks 'NESPRESSO SNE900' is in the child element inside the cart. It finds it and it passes the test.
+> Here the assertion is slightly different than in the last test case, it looks `NESPRESSO SNE900` is in the child element inside the cart. It finds it and it passes the test.
 
 ## Last comments
 Please, any doubts just contact me at `marceloadsc@gmail.com` or if you want me to explain and show the suite running directly in my PC, I'll gladly do it in a video call.
