@@ -78,11 +78,8 @@ cy.get('#sp-cc-rejectall-container').click()
 ## First test case - Verifies the title of the Webpage
 it('Verifies the title of the Webpage', function() {
 
-cy.visit('https://www.amazon.es/')
-> Here, Cypress visits Amazon.es
-
 cy.title().should('be.equal', 'Amazon.es: compra online de electrónica, libros, deporte, hogar, moda y mucho más.')
-> And then, I validate that Amazon.es is the correct website we're located, which it works through the `.should('be.equal')` function
+> After visiting the peage with the beforeEach() function, I validate that Amazon.es is the correct website we're located, which it works through the `.should('be.equal')` function
 
 ## Second test case - Searches for a Nespresso product and adds it to the cart:
 
