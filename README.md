@@ -29,7 +29,7 @@ Find an article, go to the article page, add it to the cart and validate the car
 
 # How to run this test
 
-Download this repo and open it in `Visual Studio Code` as the IDE which I recommend using.
+Download this repo and open it in `Visual Studio Code` as the IDE that I recommend using.
 
 After Opening VS Code, go to `File > Open Folder` and select the folder where everything is extracted.
 
