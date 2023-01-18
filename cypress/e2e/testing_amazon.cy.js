@@ -19,7 +19,7 @@ describe('Amazon', function() {
     cy.get('h1').contains('Cesta') //And finally the assertion, when we enter the 'Cart' page, there's an element called 'Cesta' in the page, which it looks for it by it's ID and it verifies that it contains the text 'Cesta' and it assures that it passes.
   })
   //Here, I want to do the same test case in a different way
-  it.only('Searches for a specific Nespresso SNE900 product, adds it to the cart and validates it', function() {
+  it('Searches for a specific Nespresso SNE900 product, adds it to the cart and validates it', function() {
 
     cy.get('#twotabsearchtextbox').type('NESPRESSO SNE900') //Here, it finds the search bar and clicks on it and writes 'NESPRESSO SNE900'
     cy.get('#nav-search-submit-button').click() //It looks for the search icon and clicks on it
