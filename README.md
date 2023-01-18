@@ -127,7 +127,10 @@ cy.get('#sw-gtc > .a-button-inner > .a-button-text').click()
 cy.get('.a-color-base > .a-truncate > .a-truncate-cut').contains('NESPRESSO SNE900')
 > Here the assertion is slightly different than in the last test case, it looks `NESPRESSO SNE900` is in the child element inside the cart. It finds it and it passes the test.
 
-## Last comments
+# Check out the code!
+Please check the [code](https://github.com/mcello23/cypress-amazon/blob/master/cypress/e2e/testing_amazon.cy.js) itself in my repo to see it better structured and all.
+
+# Last comments
 Please, any doubts just contact me at `marceloadsc@gmail.com` or if you want me to explain and show the suite running directly in my PC, I'll gladly do it in a video call.
 
 # Thank you!
