@@ -60,7 +60,9 @@ Here's an example of how the suite runs:
 # Video
 Please check the a high-res video recorded in the [video](https://github.com/mcello23/cypress-amazon/blob/master/cypress/videos/) folder, in which you can see the suite running and making it's assertions.
 
-## Explaining the test suite
+# Explaining the test suite
+
+## Using beforeEach() function
 
 The suite is composed of two test cases in which, before each test is run, it executes the command: 
 **beforeEach(function()**
@@ -71,9 +73,9 @@ cy.visit('https://www.amazon.es/')
 > It will always visit the Amazon Spain webpage before a test case
     
 cy.get('#sp-cc-rejectall-container').click() 
-> This one clicks on the `continue without accepting cookies` for better visualiztion of the tests.
+> It will always click on the `continue without accepting cookies` for better visualization of the tests.
 
-**First test case - Verifies the title of the Webpage**:
+## First test case - Verifies the title of the Webpage
 it('Verifies the title of the Webpage', function() {
 
 cy.visit('https://www.amazon.es/')
@@ -82,7 +84,7 @@ cy.visit('https://www.amazon.es/')
 cy.title().should('be.equal', 'Amazon.es: compra online de electrónica, libros, deporte, hogar, moda y mucho más.')
 > And then, I validate that Amazon.es is the correct website we're located, which it works through the `.should('be.equal')` function
 
-**Second test case - Searches for a Nespresso product and adds it to the cart**:
+## Second test case - Searches for a Nespresso product and adds it to the cart:
 
 it('Searches for a Nespresso product and adds it to the cart', function() {
 > It enters Amazon.es with the beforeEach() function
@@ -105,6 +107,28 @@ cy.get('#sw-gtc > .a-button-inner > .a-button-text').click()
 cy.get('h1').contains('Cesta')
 > And this is the most important, being the assertion in which validates the behaviour so far. I make Cypress check the `h1` element, which conatins `Cart` written and then the test passes.
 
+## Third test case - Searches for a sepecific Nespresso SNE900 product and adds it to the cart:
+
+cy.get('#twotabsearchtextbox').type('NESPRESSO SNE900')
+> Here, it finds the search bar and clicks on it and writes 'NESPRESSO SNE900'
+
+cy.get('#nav-search-submit-button').click() 
+> It looks for the search icon and clicks on it
+
+cy.get('[data-asin="B08LDSF6XP"] > .sg-col-inner > .s-widget-container > .s-card-container > :nth-child(1) > .puis-padding-left-small > .s-title-instructions-style > .a-size-mini > .a-link-normal > .a-size-base-plus').click()
+> Since there's 23 results, I tell cypress to click on the model of the coffee machine by the ID that I've passed on
+
+cy.get('#add-to-cart-button').click()
+> It looks for the 'Add to cart' button and clicks on it
+
+cy.get('#attachSiNoCoverage').click()
+> It looks for the 'No, thank you' in the Extra Warranty slider and clicks on it
+
+cy.get('#sw-gtc > .a-button-inner > .a-button-text').click()
+> It looks for the 'View this in cart' button and clicks on it
+  
+cy.get('.a-color-base > .a-truncate > .a-truncate-cut').contains('NESPRESSO SNE900')
+> Here the assertion is slightly different than in the last test case, it looks 'NESPRESSO SNE900' is in the child element inside the cart. It finds it and it passes the test.
 
 ## Last comments
 Please, any doubts just contact me at `marceloadsc@gmail.com` or if you want me to explain and show the suite running directly in my PC, I'll gladly do it in a video call.
