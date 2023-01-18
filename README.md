@@ -140,7 +140,7 @@ cy.get('.a-color-base > .a-truncate > .a-truncate-cut').contains('NESPRESSO SNE9
 
 ## A screenshot of all the tests executed and passed
 
-![Suite working](/img/suite_passed.gif) 
+![Suite working](/img/suite_passed.jpg) 
 
 # Check out the code!
 Please check the [code](https://github.com/mcello23/cypress-amazon/blob/master/cypress/e2e/testing_amazon.cy.js) itself in my repo to see it better structured and all.
