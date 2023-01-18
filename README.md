@@ -39,7 +39,7 @@ Install Cypress with `npm install cypress --save-dev` from your terminal.
 
 ## Running Cypress
 
-Run Cypress with the following command: `npx cypress open` or through a script that I screated `npm run cy:open` to open Cypress in interactive mode on a desktop viewport.
+Run Cypress with the following command: `npx cypress open` or through a script that I created `npm run cy:open` to open Cypress in interactive mode on a desktop viewport.
 
 In the GUI mode, Cypress will ask you which type of testing you'll be running, select `E2E Testing`.
 
