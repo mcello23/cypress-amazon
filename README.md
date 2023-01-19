@@ -60,7 +60,7 @@ Then, you'll have three options of browsers in which you'll be running the tests
 
 ## You're one click away
 
-Here is the first window you'll see. In it, just click on the spec `testing_amazon.cy.js` and it all the start running.
+Here is the first window you'll see. In it, just click on the spec `testing_amazon.cy.js` and it will start running.
 
 ![Click on the highlighted spec](/img/cypress_first_window_1.jpg)
 
